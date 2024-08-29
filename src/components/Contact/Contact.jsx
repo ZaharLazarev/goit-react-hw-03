@@ -3,12 +3,10 @@ import css from './Contact.module.css'
 import { FaPhoneAlt } from "react-icons/fa";
 import clsx from 'clsx'
 import { IoPerson } from "react-icons/io5";
-export default function Contact({VisibleContacts, onDelete}){
+export default function Contact({onDelete, contact}){
   return(
-    <div className={clsx(css.ContactListWraper)}>
-        {VisibleContacts.map((contact)=>{
-      return (
-      <li className={clsx(css.ContactListElement)} key={contact.id}>
+  <li className={clsx(css.ContactListElement)}>
+    <div className={clsx(css.ContactListWraper)}>    
         <div className={clsx(css.ContactNameAndNumber)}>
           <div className={clsx(css.ContactTextContainer)}>
            <IoPerson />
@@ -20,9 +18,7 @@ export default function Contact({VisibleContacts, onDelete}){
           </div>
         </div>
            <button className={clsx(css.ContactListButton)} onClick={()=> onDelete(contact.id)}>delete</button>
-      </li>
-      )
-        })}
     </div>
+  </li>
   )
 }

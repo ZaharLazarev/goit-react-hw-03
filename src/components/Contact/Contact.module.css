@@ -1,16 +1,4 @@
-.ContactListElement{
-  border: 1px solid black;
-  display: flex;
-  padding: 0;
-  align-items: center;
-  justify-content: space-between;
-  padding: 5px;
-}
-.ContactListWraper{
-  display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
-}
+
 .ContactListNumber{
   margin-right: auto;
   margin-bottom: 0;
@@ -36,4 +24,12 @@
   display: flex;
   align-items: center;
   gap: 10px;
+}
+.ContactListElement{
+  border: 1px solid black;
+  display: flex;
+  padding: 0;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
 }

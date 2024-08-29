@@ -1,6 +1,4 @@
 import { useEffect, useState } from 'react'
-import { nanoid } from 'nanoid'
-import { Formik } from "formik";
 import css from'./App.module.css'
 import ContactList from '../ContactList/ContactList';
 import SearchBox from '../SearchBox/SearchBox';
